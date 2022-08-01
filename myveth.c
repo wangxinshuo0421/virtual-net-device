@@ -178,7 +178,7 @@ static void veth_get_ethtool_stats(struct net_device *dev,
 
 static const struct ethtool_ops veth_ethtool_ops = {
 	.get_drvinfo		= veth_get_drvinfo,
-	.get_link		= ethtool_op_get_link,
+	.get_link			= ethtool_op_get_link,
 	.get_strings		= veth_get_strings,
 	.get_sset_count		= veth_get_sset_count,
 	.get_ethtool_stats	= veth_get_ethtool_stats,
@@ -1247,48 +1247,33 @@ static int veth_xdp(struct net_device *dev, struct netdev_bpf *xdp)
 }
 
 static const struct net_device_ops veth_netdev_ops = {
-	.ndo_init            = veth_dev_init,
-	.ndo_open            = veth_open,
-	.ndo_stop            = veth_close,
-	.ndo_start_xmit      = veth_xmit,
-	.ndo_get_stats64     = veth_get_stats64,
-	.ndo_set_rx_mode     = veth_set_multicast_list,
-	.ndo_set_mac_address = eth_mac_addr,
-#ifdef CONFIG_NET_POLL_CONTROLLER
-	.ndo_poll_controller	= veth_poll_controller,
-#endif
-	.ndo_get_iflink		= veth_get_iflink,
-	.ndo_fix_features	= veth_fix_features,
-	.ndo_features_check	= passthru_features_check,
+	.ndo_init            	= veth_dev_init,
+	.ndo_open            	= veth_open,
+	.ndo_stop            	= veth_close,
+	.ndo_start_xmit      	= veth_xmit,
+	.ndo_get_stats64     	= veth_get_stats64,
+	.ndo_set_rx_mode     	= veth_set_multicast_list,
+	.ndo_set_mac_address 	= eth_mac_addr,
+	.ndo_get_iflink		 	= veth_get_iflink,
+	.ndo_fix_features	 	= veth_fix_features,
+	.ndo_features_check	 	= passthru_features_check,
 	.ndo_set_rx_headroom	= veth_set_rx_headroom,
-	.ndo_bpf		= veth_xdp,
-	.ndo_xdp_xmit		= veth_xdp_xmit,
+	.ndo_bpf				= veth_xdp,
+	.ndo_xdp_xmit			= veth_xdp_xmit,
 };
 
-#define VETH_FEATURES (NETIF_F_SG | NETIF_F_FRAGLIST | NETIF_F_HW_CSUM | \
-		       NETIF_F_RXCSUM | NETIF_F_SCTP_CRC | NETIF_F_HIGHDMA | \
-		       NETIF_F_GSO_SOFTWARE | NETIF_F_GSO_ENCAP_ALL | \
-		       NETIF_F_HW_VLAN_CTAG_TX | NETIF_F_HW_VLAN_CTAG_RX | \
-		       NETIF_F_HW_VLAN_STAG_TX | NETIF_F_HW_VLAN_STAG_RX )
+#define VETH_FEATURES ( NETIF_F_IP_CSUM | NETIF_F_FRAGLIST | NETIF_F_HW_CSUM | \
+		       			NETIF_F_RXCSUM | NETIF_F_SCTP_CRC | NETIF_F_HIGHDMA | \
+		       			NETIF_F_GSO_SOFTWARE | NETIF_F_GSO_ENCAP_ALL |NETIF_F_SG )
 
-static void veth_setup(struct net_device *dev)
-{
+static void veth_setup(struct net_device *dev) {
 	ether_setup(dev);
-
-	dev->priv_flags &= ~IFF_TX_SKB_SHARING;
-	dev->priv_flags |= IFF_LIVE_ADDR_CHANGE;
-	dev->priv_flags |= IFF_NO_QUEUE;
-	dev->priv_flags |= IFF_PHONY_HEADROOM;
-
+	
 	dev->netdev_ops = &veth_netdev_ops;
 	dev->ethtool_ops = &veth_ethtool_ops;
 	dev->features |= NETIF_F_LLTX;
 	dev->features |= VETH_FEATURES;
-	dev->vlan_features = dev->features &
-			     ~(NETIF_F_HW_VLAN_CTAG_TX |
-			       NETIF_F_HW_VLAN_STAG_TX |
-			       NETIF_F_HW_VLAN_CTAG_RX |
-			       NETIF_F_HW_VLAN_STAG_RX);
+
 	dev->needs_free_netdev = true;
 	dev->priv_destructor = veth_dev_free;
 	dev->max_mtu = ETH_MAX_MTU;

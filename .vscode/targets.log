@@ -9,7 +9,7 @@ make.exe: Makefile:4: pipe: No such file or directory
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 01 15:13:58 2022
+# Make data base, printed on Mon Aug 01 21:38:07 2022
 
 # Variables
 
@@ -50,8 +50,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 TMP = C:\Users\SuperACE\AppData\Local\Temp
 # makefile (from 'Makefile', line 1)
 CONFIG_MODULE_SIG = n
@@ -62,11 +60,11 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_CWD = D:\Program Files (x86)\Microsoft VS Code
+VSCODE_CWD = D:\postgraduateData\��������ս��
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
-PATH = D:\Program Files (x86)\iverilog\bin;D:\Program Files (x86)\iverilog\gtkwave\bin;D:\Program Files (x86)\VMware\VMware Workstation\bin\;D:\Environment\mingw64\bin;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Java\jdk-15;%JAVA_HOME%\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\cmd;D:\Program Files\MATLAB\R2020a\runtime\win64;D:\Program Files\MATLAB\R2020a\bin;D:\Program Files\MATLAB\R2020a\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\MinGW\bin;D:\Program Files (x86)\Eclipse\Sumo\bin\;D:\Program Files (x86)\Eclipse\Sumo\tools\;C:\Program Files\dotnet\;D:\Program Files (x86)\Notepad++\;C:\Program Files (x86)\cmake-3.9.0-rc3-win64-x64\bin;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\XilinxVIVADO\Vivado\2019.1\bin;C:\Users\SuperACE\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\SuperACE\AppData\Local\Programs\Python\Python37\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\SuperACE\AppData\Local\GitHubDesktop\bin;%PyCharm Community Edition%;D:\texlive\2021\bin\win32;C:\Users\SuperACE\AppData\Local\Pandoc\;D:\Program Files (x86)\Notepad++\notepad++.exe;D:\Program Files (x86)\Microsoft VS Code\bin;;D:\Program Files (x86)\modelsim\win64
+PATH = D:\Program Files (x86)\iverilog\bin;D:\Program Files (x86)\iverilog\gtkwave\bin;D:\Program Files (x86)\VMware\VMware Workstation\bin\;D:\Environment\mingw64\bin;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Java\jdk-15;%JAVA_HOME%\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\cmd;D:\Program Files\MATLAB\R2020a\runtime\win64;D:\Program Files\MATLAB\R2020a\bin;D:\Program Files\MATLAB\R2020a\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\MinGW\bin;D:\Program Files (x86)\Eclipse\Sumo\bin\;D:\Program Files (x86)\Eclipse\Sumo\tools\;C:\Program Files\dotnet\;D:\Program Files (x86)\Notepad++\;C:\Program Files (x86)\cmake-3.9.0-rc3-win64-x64\bin;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\XilinxVIVADO\Vivado\2019.1\bin;C:\Users\SuperACE\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\SuperACE\AppData\Local\Programs\Python\Python37\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\SuperACE\AppData\Local\GitHubDesktop\bin;%PyCharm Community Edition%;D:\texlive\2021\bin\win32;C:\Users\SuperACE\AppData\Local\Pandoc\;D:\Program Files (x86)\Notepad++\notepad++.exe;D:\Program Files (x86)\Microsoft VS Code\bin;D:\Program Files (x86)\modelsim\win64
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -86,7 +84,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14504_AYVYWDOTURIISTBQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12976_JFKKRFWDALQBDFLQ
 # environment
 COMPUTERNAME = LAPTOP-SUPERACE
 # environment
@@ -140,7 +138,7 @@ PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
 LOCALAPPDATA = C:\Users\SuperACE\AppData\Local
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = %ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := make.exe
 # default
@@ -194,8 +192,6 @@ SUFFIXES :=
 # environment
 SYSTEMDRIVE = C:
 # environment
-SESSIONNAME = Console
-# environment
 PROCESSOR_REVISION = 8c01
 # default
 .RECIPEPREFIX := 
@@ -204,13 +200,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 14504
+VSCODE_PID = 12976
 # environment
 USERDOMAIN_ROAMINGPROFILE = LAPTOP-SUPERACE
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=15/128=12%
+# Load=95/1024=9%, Rehash=0, Collisions=15/125=12%
 
 # Pattern-specific Variable Values
 
@@ -218,9 +212,9 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-SUPERACE
 
 # Directories
 
-# . (key d:/Virtual Machine/ubuntuShare/virtual-net-device, mtime 1659225536): 23 files, no impossibilities.
+# . (key d:/Virtual Machine/ubuntuShare/virtual-net-device, mtime 1659345031): 22 files, no impossibilities.
 
-# 23 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -292,12 +286,12 @@ clean:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 286 B / avg = 10 B
-# current buf: size = 8162 B / used = 286 B / count = 27 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 249 B / avg = 9 B
+# current buf: size = 8162 B / used = 249 B / count = 26 / avg = 9 B
 
-# strcache performance: lookups = 34 / hit rate = 20%
+# strcache performance: lookups = 33 / hit rate = 21%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=1/34=3%
-# Finished Make data base on Mon Aug 01 15:13:58 2022
+# Load=26/8192=0%, Rehash=0, Collisions=1/33=3%
+# Finished Make data base on Mon Aug 01 21:38:07 2022
 
  

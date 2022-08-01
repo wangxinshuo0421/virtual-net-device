@@ -100,12 +100,10 @@ void sendUdpMsg (const char* buff, uint16_t length) {
     constructIpHeader(&ipHdr, length + sizeof(IpHdr) + sizeof(UdpHdr));
     memset(&udpHdr, 0, sizeof(UdpHdr));
     constructUdpHeader(&udpHdr, length);
-
     memset(sendBuf, 0, MAX_UDP_DATA_LEN);
     memcpy(sendBuf, &ipHdr, sizeof(IpHdr));
     memcpy(sendBuf + sizeof(IpHdr), &udpHdr, sizeof(UdpHdr));
     memcpy(sendBuf + sizeof(IpHdr) + sizeof(UdpHdr), buff, length);
-
     sendto(udpSocket, sendBuf, length + sizeof(IpHdr) + sizeof(UdpHdr), 0, (struct sockaddr *) &dstAddr, sizeof(struct sockaddr_in));
 }
 
