@@ -1,0 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'd:/Virtual Machine/ubuntuShare/virtual-net-device'
+make -C /lib/modules//build/ M= modules
+make.exe: Leaving directory 'd:/Virtual Machine/ubuntuShare/virtual-net-device'
+ 
+process_begin: CreateProcess(NULL, uname -r, ...) failed.
+make.exe: Makefile:4: pipe: No such file or directory
+

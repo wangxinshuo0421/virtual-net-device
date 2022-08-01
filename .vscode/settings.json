@@ -1,0 +1,11 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "types.h": "c",
+        "skbuff.h": "c",
+        "ip.h": "c",
+        "refcount.h": "c",
+        "udp.h": "c",
+        "string.h": "c"
+    }
+}
