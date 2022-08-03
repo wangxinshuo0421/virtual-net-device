@@ -6,6 +6,9 @@
         "ip.h": "c",
         "refcount.h": "c",
         "udp.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "spinlock.h": "c",
+        "veth.h": "c",
+        "sctp.h": "c"
     }
 }
